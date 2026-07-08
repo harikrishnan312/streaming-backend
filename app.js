@@ -43,6 +43,7 @@ app.get("/", (req, res) => {
 app.get("/status", (req, res) => {
     res.json({
         live: currentHost.live,
+        streamCode: currentHost.streamCode,
     });
 });
 
